@@ -1,0 +1,14 @@
+{
+  "name": "@Xilerth/TrueGridCss",
+  "version": "1.0.0",
+  "description": "A CSS framework for building responsive grid layouts",
+  "scripts": {},
+  "keywords": [
+    "css",
+    "grid",
+    "layout",
+    "responsive"
+  ],
+  "author": "Xilerth",
+  "license": "MIT"
+}
