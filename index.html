@@ -75,7 +75,7 @@
         justify-content: center;
       }
 
-      a {
+      a.button {
         padding: 1rem 2rem;
         border: none;
         border-radius: 0.25rem;
@@ -87,10 +87,10 @@
         color: black;
       }
 
-      a:active{
+      a.button:active{
         background-color: #e1e1e1;
       }
-      a:hover {
+      a.button:hover {
         background-color: #e1e1e1;
       }
 
@@ -149,6 +149,12 @@
       [class*="tg-grid"] {
         gap: 1rem;
       }
+
+      footer{
+        padding: 2rem;
+        background-color: #f1f1f1;
+        text-align: center;
+      }
     </style>
 
     <!-- script -->
@@ -158,8 +164,8 @@
     <header>
       <img src="assets/logo-light.png" alt="" />
       <section class="buttons-container tg-grid-6-6 tg-grid-sm-12">
-        <a href="css/grid.min.css" download="grid.min.css" >Download</a>
-        <a href="https://www.npmjs.com/package/@xilerth/truegridcss" target="_blank">NPM Package</a>
+        <a class="button" href="css/grid.min.css" download="grid.min.css" >Download</a>
+        <a class="button" href="https://www.npmjs.com/package/@xilerth/truegridcss" target="_blank">NPM Package</a>
       </section>
     </header>
 
@@ -249,22 +255,9 @@
       </article>
     </section>
 
-    <!-- <div
-      class="tg-grid-1-1-1-1-1-1-1-1-1-1-1-1 tg-grid-sm-12 tg-grid-m-6-6 tg-grid-l-4-4-4 tg-grid-xl-3-3-3-3"
-    >
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-    </div> -->
+    <footer>
+      Developed by <a href="https://github.com/Xilerth" target="_blank">@xilerth</a>
+    </footer>
 
     <script>
         const playground = document.querySelector('.playground');
