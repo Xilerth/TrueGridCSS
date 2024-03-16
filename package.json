@@ -1,6 +1,6 @@
 {
-  "name": "@Xilerth/TrueGridCss",
-  "version": "1.0.0",
+  "name": "@xilerth/truegridcss",
+  "version": "1.1.0",
   "description": "A CSS framework for building responsive grid layouts",
   "scripts": {},
   "keywords": [

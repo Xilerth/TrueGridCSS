@@ -1,6 +1,6 @@
 # Grid System README
 
-![Grid System Logo](demo/assets/logo-light.png)
+![Grid System Logo](demo/assets/logo-bg.png)
 
 ## Introduction
 
