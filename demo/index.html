@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- style -->
+    <link rel="stylesheet" href="../css/grid.min.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
+      body {
+        font-family: "Nova Square", cursive;
+        margin: 0;
+        padding: 0;
+        line-height: 2rem;
+      }
+      header {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        padding: 2rem;
+        gap: 2rem;
+        background-image: linear-gradient(to top, #232323, #2f2f2f, #474747);
+      }
+      header img {
+        width: 300px;
+        object-fit: cover;
+      }
+
+      .buttons-container {
+        gap: 1rem;
+        justify-content: center;
+      }
+
+      a {
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 0.25rem;
+        background-color: #f1f1f1;
+        cursor: pointer;
+        text-align: center;
+        line-height: normal;
+        text-decoration: none;
+        color: black;
+      }
+
+      a:active{
+        background-color: #e1e1e1;
+      }
+      a:hover {
+        background-color: #e1e1e1;
+      }
+
+      .introduction {
+        padding: 2rem;
+        background-color: #f1f1f1;
+        display: grid;
+        gap: 2rem;
+      }
+
+      .introduction article {
+        padding: 2rem;
+        background-color: #fff;
+        border: 1px solid rgba(30, 30, 30, 0.463);
+      }
+/* 
+      .introduction article:nth-child(even) {
+        text-align: right;
+      } */
+
+      .introduction article code {
+        background-color: #e7e7e7;
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.25rem;
+        font-size: 1.15rem;
+        font-weight: bold;
+      }
+
+      .current-grid {
+        padding: 1rem;
+        background-color: #f1f1f1;
+        border: 1px solid rgb(105, 105, 105);
+        border-radius: 1rem;
+      }
+      sub {
+        font-size: 0.75rem;
+        color: #fa0000;
+    }
+
+      .card, input[type="text"] {
+        height: 20px;
+        background-color: #f1f1f1;
+        border: 1px solid rgb(105, 105, 105);
+        border-radius: 1rem;
+        padding: 0.5rem;
+      }
+
+      input[type="range"] {
+        accent-color: #272727;
+      }
+
+      .playground{
+        margin:2rem 0 ;
+      }
+
+      [class*="tg-grid"] {
+        gap: 1rem;
+      }
+    </style>
+
+    <!-- script -->
+
+  </head>
+  <body>
+    <header>
+      <img src="assets/logo-light.png" alt="" />
+      <section class="buttons-container tg-grid-6-6 tg-grid-sm-12">
+        <a href="../css/grid.min.css" download="grid.min.css" >Download</a>
+        <a>NPM Package</a>
+      </section>
+    </header>
+
+    <section class="introduction">
+      <article>
+        <h1>Grid System</h1>
+        <p>
+          This is a simple grid system that you can use to create a responsive
+          layout for your website.
+        </p>
+        <p>
+          It's a different approach to the grid system that you can find in
+          other grid systems like Bootstrap.
+        </p>
+      </article>
+
+      <article>
+        <h2>How to use</h2>
+        <p>
+          You can use the grid system by adding the class
+          <code>tg-grid</code> to the container and then add the class
+          <code>tg-grid-*</code> to the children.
+        </p>
+        <p>
+          The <code>*</code> is the number of columns that you want to use. You
+          can use from 1 to 12 columns.
+        </p>
+      </article>
+
+      <article>
+        <h2>Responsive</h2>
+        <p>
+          The grid system is responsive, you can use the classes
+          <code>tg-grid-sm-*</code>, <code>tg-grid-m-*</code>,
+          <code>tg-grid-l-*</code>, and <code>tg-grid-xl-*</code> to create a
+          responsive layout.
+        </p>
+      </article>
+
+      <article>
+        <h2>Example</h2>
+        <p>
+          This is an example of how you can use the grid system to create a
+          responsive layout.
+        </p>
+
+        <p>
+          <code>
+            &lt;div class="tg-grid-3-3-3-3 tg-grid-sm-12 tg-grid-m-6-6 tg-grid-l-4-4-4 tg-grid-xl-3-3-3-3"&gt;
+          </code>
+
+          <div class="tg-grid-3-3-3-3 tg-grid-sm-12 tg-grid-m-6-6 tg-grid-l-4-4-4 tg-grid-xl-3-3-3-3">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+          </div>
+        </p>
+      </article>
+
+      <article>
+        <h2>Playground <sub>Beta</sub></h2>
+        <p>
+          You can use this playground to test the grid system and create a
+          layout for your website.
+        </p>
+        <p>
+          You can use the slider to change the number of columns and then add
+          the size of the columns remeber that <strong>the sum of the columns should be 12</strong>.
+        </p>
+        <p>
+            <strong>Current grid:</strong>
+        </p>
+        <div class="current-grid">
+            tg-grid-12
+        </div>
+        
+        <p>
+            <strong>Columns:</strong>
+        </p>
+        <div class="tg-grid-12">
+            <input type="range" min="1" max="12" value="1" class="slider" />
+        </div>
+        <div class="playground">
+
+        </div>
+      </article>
+    </section>
+
+    <!-- <div
+      class="tg-grid-1-1-1-1-1-1-1-1-1-1-1-1 tg-grid-sm-12 tg-grid-m-6-6 tg-grid-l-4-4-4 tg-grid-xl-3-3-3-3"
+    >
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+    </div> -->
+
+    <script>
+        const playground = document.querySelector('.playground');
+        const currentGrid = document.querySelector('.current-grid');
+        const slider = document.querySelector('.slider')
+
+
+        const inputContainer = document.createElement('div');
+        inputContainer.classList.add('tg-grid-12');
+        playground.appendChild(inputContainer);
+
+        console.log(slider);
+
+        slider.addEventListener('input', () => {
+         createInput(slider.value);
+        });
+
+        createInput(slider.value);
+
+        sliderContainer.appendChild(slider);
+       
+        playground.appendChild(inputContainer);
+        
+
+    
+        function createInput(value) {
+            inputContainer.innerHTML = '';
+            for (let i = 0; i < value; i++) {
+                const input = document.createElement('input');
+                input.type = 'text';
+                input.placeholder = `Introduce the size of the column ${i + 1} of 12`;
+
+                input.addEventListener('input', () => {
+                const values = Array.from(inputContainer.children).map((input) => input.value);
+                //if sum of values not equal to 12 
+                const grid = values.join('-');
+
+                if(values.reduce((acc, value) => acc + Number(value), 0) !== 12) {
+                    currentGrid.innerHTML = 'The sum of the columns should be 12, current sum: ' + values.reduce((acc, value) => acc + Number(value), 0);
+                } else {
+                    currentGrid.innerHTML = `tg-grid-${grid}`;
+                }
+                inputContainer.className = `tg-grid-${grid}`;
+
+            });
+
+                inputContainer.appendChild(input);
+            }
+        }
+        
+    </script>
+  </body>
+</html>
