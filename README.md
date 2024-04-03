@@ -7,8 +7,9 @@
 This is a simple grid system that you can use to create a responsive layout for your website. It's a different approach to the grid system that you can find in other grid systems like Bootstrap.
 
 ## How to Use
+  `npm i @xilerth/truegridcss`
 
-You can use the grid system by adding the class `tg-grid` to the container and then add the class `tg-grid-*` to the children. The `*` represents the number of columns that you want to use, ranging from 1 to 12 columns.
+Now you can use the grid system by adding the class `tg-grid` to the container and then add the class `tg-grid-*` to the children. The `*` represents the number of columns that you want to use, ranging from 1 to 12 columns.
 
 ## Responsive
 
